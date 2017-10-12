@@ -1,15 +1,13 @@
 console.log("index.js");
-
-import GyroNorm from "gyronorm";
 const myGlobal = {};
 myGlobal.songfile = "assets/zxmzf.mp3";
 window.onload = init;
 function init() {
-	myGlobal.song = new buzz.sound(songfile);
+	myGlobal.song = new buzz.sound(myGlobal.songfile);
 
 	myGlobal.gn = new GyroNorm();
 
-	mhGlobal.gn
+	myGlobal.gn
 		.init()
 		.then(function() {
 			gn.start(function(data) {
