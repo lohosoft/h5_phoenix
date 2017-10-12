@@ -9,7 +9,6 @@ function init() {
 		prepare();
 	}
 }
-
 function prepare() {
 	myGlobal.tick = 0;
 	myGlobal.update = true;
